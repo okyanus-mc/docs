@@ -1,0 +1,15 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "Okyanus developer documentation",
+  "scripts": {
+    "build": "npx vuepress build",
+    "dev": "npx vuepress dev"
+  },
+  "keywords": [],
+  "author": "Okyanus",
+  "license": "CC0",
+  "dependencies": {
+    "vuepress": "^1.0.0-rc.1"
+  }
+}
