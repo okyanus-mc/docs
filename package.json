@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Okyanus developer documentation",
   "scripts": {
-    "build": "npx vuepress build",
+    "build": "npx vuepress build && mv .vuepress/dist docs",
     "dev": "npx vuepress dev"
   },
   "keywords": [],

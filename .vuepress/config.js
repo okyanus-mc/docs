@@ -1,4 +1,5 @@
 module.exports = {
+  base: "/docs/",
   locales: {
     "/": {
       lang: "en-US",
@@ -18,13 +19,13 @@ module.exports = {
         label: "English",
         editLinkText: "Edit this page",
         sidebar: [
-          "getting-started",
+          "getting-started"
 
-          {
-            title: "Development",
-            sidebarDepth: 2,
-            children: ["dev/getting-started"]
-          }
+          // {
+          //   title: "Development",
+          //   sidebarDepth: 2,
+          //   children: ["dev/getting-started"]
+          // }
         ]
       },
       "/tr/": {
@@ -33,13 +34,13 @@ module.exports = {
         editLinkText: "Bu sayfayı düzenle",
 
         sidebar: [
-          "tr/getting-started",
+          "tr/getting-started"
 
-          {
-            title: "Geliştirme",
-            sidebarDepth: 2,
-            children: ["dev/getting-started"]
-          }
+          // {
+          //   title: "Geliştirme",
+          //   sidebarDepth: 2,
+          //   children: ["dev/getting-started"]
+          // }
         ]
       }
     },
