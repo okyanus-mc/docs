@@ -3,7 +3,7 @@ home: true
 heroText: Okyanus Sunucu
 tagline: Yeniden düşünülmüş Minecraft sunucu altyapısı.
 actionText: Hemen Dene →
-actionLink: /tr/guide.html
+actionLink: /tr/getting-started.html
 features:
   - title: Vanilla Tabanlı
     details: Okyanus, vanilla sunucu jar'ı üstüne yapılmıştır. Bu sayede herhangi bir oyun farkı yaşanmayacaktır.

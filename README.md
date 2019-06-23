@@ -3,7 +3,7 @@ home: true
 heroText: Okyanus Server
 tagline: Reimagined Minecraft server framework.
 actionText: Get Started →
-actionLink: /guide.html
+actionLink: /getting-started.html
 features:
   - title: Based on Vanilla
     details: Okyanus is based on the vanilla server jar. Meaning your playing experience will be as accurate as it can be.
