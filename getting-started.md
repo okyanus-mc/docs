@@ -16,3 +16,22 @@ And you should be fully set up! Run your server and execute the `/mods` command
 to check.
 
 Please make sure to regularly update both your server, and runtime.
+
+## Recommended Java arguments
+
+We recommend you to use the following Java arguments when starting your server:
+
+```
+-XX:+UseG1GC
+-XX:+UnlockExperimentalVMOptions
+-XX:MaxGCPauseMillis=100
+-XX:+DisableExplicitGC
+-XX:TargetSurvivorRatio=90
+-XX:G1NewSizePercent=50
+-XX:G1MaxNewSizePercent=80
+-XX:G1MixedGCLiveThresholdPercent=35
+-XX:+AlwaysPreTouch
+-XX:+ParallelRefProcEnabled
+```
+
+Source: [Aikar](https://mcflags.emc.gs)
