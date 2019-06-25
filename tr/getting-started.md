@@ -35,3 +35,7 @@ Sunucunuzu çalıştırırken aşaığdaki Java argümenlarını ilave etmenizi 
 ```
 
 Kaynak: [Aikar](https://mcflags.emc.gs)
+
+## Javadoc
+
+You can read our API javadocs [here](https://okyanus-mc.github.io/api/).

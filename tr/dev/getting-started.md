@@ -48,3 +48,7 @@ Lütfen aşağıdaki dosyalardaki mod bilgilerini değiştirmeyi unutmayın:
 - `build.gradle`
 - `settings.gradle`
 - `src/main/resources/okyanus.json`
+
+## Javadoc
+
+API Javadoclarını [bu adresten](https://okyanus-mc.github.io/api/) okuyabilirsiniz.
