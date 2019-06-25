@@ -45,3 +45,7 @@ Please don't forget to change your mod information in the following files:
 - `build.gradle`
 - `settings.gradle`
 - `src/main/resources/okyanus.json`
+
+## Javadoc
+
+You can read our API javadocs [here](https://okyanus-mc.github.io/api/).
