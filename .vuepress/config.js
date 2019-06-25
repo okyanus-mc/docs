@@ -1,5 +1,4 @@
 module.exports = {
-  base: "/docs/",
   locales: {
     "/": {
       lang: "en-US",
