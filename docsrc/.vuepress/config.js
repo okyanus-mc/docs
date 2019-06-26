@@ -23,7 +23,7 @@ module.exports = {
           {
             title: "Development",
             sidebarDepth: 2,
-            children: ["dev/getting-started"]
+            children: ["dev/getting-started", "dev/guide"]
           }
         ]
       },
@@ -38,7 +38,7 @@ module.exports = {
           {
             title: "Geliştirme",
             sidebarDepth: 2,
-            children: ["tr/dev/getting-started"]
+            children: ["tr/dev/getting-started", "tr/dev/guide"]
           }
         ]
       }
