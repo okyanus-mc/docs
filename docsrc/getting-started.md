@@ -12,7 +12,7 @@ While installing the server itself is that easy, most mods will require the
 - Download [Okyanus Runtime](https://scripts.issizler.club/okyanus.php?repo=runtime)
 - Place it in your `mods` folder.
 
-And you should be fully set up! Run your server and execute the `/mods` command
+And you should be fully set up! Run your server and execute the `/okyanus` command
 to check.
 
 Please make sure to regularly update both your server, and runtime.

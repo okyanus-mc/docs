@@ -12,7 +12,7 @@ gerektirecektir. Onu da aşağıdaki gibi kurabilirsiniz:
 - [Okyanus Runtime](https://scripts.issizler.club/okyanus.php?repo=runtime)'ı indirin.
 - `mods` klasörüne koyun.
 
-Ve tamamen hazırsınız! Sunucunuza konsoldan `/mods` komudunu yazarak, her şeyi
+Ve tamamen hazırsınız! Sunucunuza konsoldan `/okyanus` komudunu yazarak, her şeyi
 doğru kurduğunuza emin olabilirsiniz.
 
 Lütfen sunucunuzu ve Okyanus Runtime'ı arada bir güncellemeyi unutmayın.
