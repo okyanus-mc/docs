@@ -38,7 +38,7 @@ Komut sınıfımızı yaptıktan sonra, o sınıfı kayıt etmemiz gerekmektedir
 sınıfınızın `init` metoduna gelin, ve aşağıdaki gibi komudunuzu kayıt edin.
 
 ```java
-CommandManager.INSTANCE.register(
+CommandManager.getInstance().register(
     new CommandBuilder()
         .name("merhaba")
         .run(new MerhabaKomudu());
@@ -56,7 +56,7 @@ Komudunuza argümen ekleyebilmek için, ilk başta o argümanı kayıt ederken
 belirleyin.
 
 ```java
-CommandManager.INSTANCE.register(
+CommandManager.getInstance().register(
     new CommandBuilder()
         .name("merhaba")
         .arg("kisi", ArgumentType.PLAYER)
@@ -89,15 +89,15 @@ ile mesajın içeriğini değiştirebilirsiniz, deneyin isterseniz.
 sınıfınıza gelin ve sınıfınızı şu şekilde kayıt edin:
 
 ```java
-EventManager.INSTANCE.register(new ChatListener()); // ChatListener sizin sınıfınızın adı olacaktır
+EventManager.getInstance().register(new ChatListener()); // ChatListener sizin sınıfınızın adı olacaktır
 ```
 
 Şimdi eğer modunuzu derlerseniz ve test ederseniz, yeni mesajınızı görebilmeniz lazım.
 
 ## Olay listesi?
 
-Okyanus'da bulunan bütün olayları [bu adreste](https://okyanus-mc.github.io/api/club/issizler/okyanus/api/event/package-summary.html)
-`Class Summary` altında, ismi `Event` ile biten sınıflar olarak görebilirsiniz.
+Okyanus'da bulunan bütün olayları [bu adreste](https://okyanus-mc.github.io/api/club/issizler/okyanus/api/event/package-summary.html),
+`This event fires whenever...` ile açıklanan classlar olarak görebilirsiniz.
 
 ## Ayarlar?
 

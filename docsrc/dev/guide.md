@@ -19,7 +19,7 @@ Your mod needs a "main class". To create it, you'll have to do two things:
   interface.
 - Add your class to `entrypoints.server` on `okyanus.json`.
 
-::: tip NOT
+::: tip
 A mod can have multiple main classes.
 :::
 
@@ -35,7 +35,7 @@ You'll need to register this class now. Go to your main class' `init` method
 and register your command like so:
 
 ```java
-CommandManager.INSTANCE.register(
+CommandManager.getInstance().register(
     new CommandBuilder()
         .name("hello")
         .run(new HelloCommand());
@@ -52,7 +52,7 @@ You should now be able to use the `/hello` command on your server.
 To add an argument to your command, first define it in your registration:
 
 ```java
-CommandManager.INSTANCE.register(
+CommandManager.getInstance().register(
     new CommandBuilder()
         .name("hello")
         .arg("person", ArgumentType.PLAYER)
@@ -64,7 +64,7 @@ CommandManager.INSTANCE.register(
 Now go to your command class, and get the value of that argument like so:
 
 ```java
-Player p = source.getArgPlayer("kisi")
+Player p = source.getArgPlayer("person")
 ```
 
 Try printing it out!
@@ -83,22 +83,22 @@ on the generated method to edit chat messages, try it out.
 You'll also need to register this class, so do it like this on your main class:
 
 ```java
-EventManager.INSTANCE.register(new ChatListener()); // ChatListener is your class' name
+EventManager.getInstance().register(new ChatListener()); // ChatListener is your class' name
 ```
 
 Now, if you were to test your mod, your chat messages should be modified.
 
 ## Event list?
 
-You can find all of Okyanus' events [here](https://okyanus-mc.github.io/api/club/issizler/okyanus/api/event/package-summary.html)
-under `Class Summary`.
+You can find all of Okyanus' events [here](https://okyanus-mc.github.io/api/club/issizler/okyanus/api/event/package-summary.html).  
+Check the description for `This event fires whenever ...` to see if it's an event or not
 
 ## Configuration?
 
 We're bundling [Night Config](https://github.com/TheElectronWill/Night-Config)
 with the API, so you can check out their documentation for more info.
 
-::: tip NOT
+::: tip NOTE
 Please put all your configuration inside `<server folder>/config/` so all mod
 settings can be in a single place.
 :::
