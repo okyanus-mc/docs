@@ -25,6 +25,12 @@ module.exports = {
             title: "Development",
             sidebarDepth: 2,
             children: ["dev/getting-started", "dev/guide"]
+          },
+
+          {
+            title: "Contributing",
+            sidebarDepth: 2,
+            children: ["dev/okyanus/workspace"]
           }
         ]
       },
@@ -38,9 +44,15 @@ module.exports = {
           "tr/compatibility",
 
           {
-            title: "Geliştirme",
+            title: "Mod Geliştirme",
             sidebarDepth: 2,
             children: ["tr/dev/getting-started", "tr/dev/guide"]
+          },
+
+          {
+            title: "Okyanus Geliştirme",
+            sidebarDepth: 2,
+            children: ["tr/dev/okyanus/workspace"]
           }
         ]
       }
