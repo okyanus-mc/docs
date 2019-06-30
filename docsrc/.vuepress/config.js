@@ -30,6 +30,7 @@ module.exports = {
           {
             title: "Contributing",
             sidebarDepth: 2,
+            path: "/dev/okyanus/contributing",
             children: ["dev/okyanus/workspace"]
           }
         ]
@@ -52,6 +53,7 @@ module.exports = {
           {
             title: "Okyanus Geliştirme",
             sidebarDepth: 2,
+            path: "/tr/dev/okyanus/contributing",
             children: ["tr/dev/okyanus/workspace"]
           }
         ]
