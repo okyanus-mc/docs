@@ -7,7 +7,6 @@ To create that structure, first create an empty folder. Inside that,
 run these three `git` commands to clone everything you'll need
 
 ```
-$ git clone https://github.com/okyanus-mc/loader
 $ git clone https://github.com/okyanus-mc/api
 $ git clone https://github.com/okyanus-mc/runtime
 ```
@@ -29,7 +28,7 @@ mod development environment.
 :::
 
 First, get your workspace ready (only cloning `api` should be enough for
-mods, but you'll most likely want `runtime`, and thus, `loader` as well)
+mods, but you'll most likely want `runtime` as well)
 
 Then, create a new folder inside that. Call it `plugins`, or `mods` or anything.
 The name doesn't matter, creating a new folder does.

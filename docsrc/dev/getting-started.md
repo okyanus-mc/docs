@@ -44,7 +44,7 @@ Please don't forget to change your mod information in the following files:
 
 - `build.gradle`
 - `settings.gradle`
-- `src/main/resources/okyanus.json`
+- `src/main/resources/fabric.mod.json`
 
 ## Javadoc
 

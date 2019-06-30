@@ -15,9 +15,9 @@ fresh.
 
 Your mod needs a "main class". To create it, you'll have to do two things:
 
-- Implement the [`Mod`](https://okyanus-mc.github.io/api/club/issizler/okyanus/api/Mod.html)
-  interface.
-- Add your class to `entrypoints.server` on `okyanus.json`.
+- Extend the [`Mod`](https://okyanus-mc.github.io/api/club/issizler/okyanus/api/Mod.html)
+  class.
+- Add your class to `entrypoints.server` on `fabric.mod.json`.
 
 ::: tip
 A mod can have multiple main classes.
