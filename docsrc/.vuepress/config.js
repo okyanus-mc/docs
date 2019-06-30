@@ -19,6 +19,7 @@ module.exports = {
         editLinkText: "Edit this page",
         sidebar: [
           "getting-started",
+          "compatibility",
 
           {
             title: "Development",
@@ -34,6 +35,7 @@ module.exports = {
 
         sidebar: [
           "tr/getting-started",
+          "tr/compatibility",
 
           {
             title: "Geliştirme",
