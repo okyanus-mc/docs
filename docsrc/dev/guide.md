@@ -17,7 +17,8 @@ Your mod needs a "main class". To create it, you'll have to do two things:
 
 - Extend the [`Mod`](https://okyanus-mc.github.io/api/club/issizler/okyanus/api/Mod.html)
   class.
-- Add your class to `entrypoints.server` on `fabric.mod.json`.
+- Add your class to `entrypoints.server` on `fabric.mod.json` like how the
+  template does it.
 
 ::: tip
 A mod can have multiple main classes.
@@ -35,9 +36,8 @@ You'll need to register this class now. Go to your main class' `init` method
 and register your command like so:
 
 ```java
-CommandManager.getInstance().register(
-    new CommandBuilder()
-        .name("hello")
+registerCommand(
+    new CommandBuilder("hello")
         .run(new HelloCommand());
     })
 );
@@ -52,9 +52,8 @@ You should now be able to use the `/hello` command on your server.
 To add an argument to your command, first define it in your registration:
 
 ```java
-CommandManager.getInstance().register(
-    new CommandBuilder()
-        .name("hello")
+registerCommand(
+    new CommandBuilder("hello")
         .arg("person", ArgumentType.PLAYER)
         .run(new HelloCommand());
     })
@@ -64,7 +63,7 @@ CommandManager.getInstance().register(
 Now go to your command class, and get the value of that argument like so:
 
 ```java
-Player p = source.getArgPlayer("person")
+Optional<Player> p = source.getArgPlayer("person")
 ```
 
 Try printing it out!
@@ -83,7 +82,7 @@ on the generated method to edit chat messages, try it out.
 You'll also need to register this class, so do it like this on your main class:
 
 ```java
-EventManager.getInstance().register(new ChatListener()); // ChatListener is your class' name
+registerEvent(new ChatListener()); // ChatListener is your class' name
 ```
 
 Now, if you were to test your mod, your chat messages should be modified.
