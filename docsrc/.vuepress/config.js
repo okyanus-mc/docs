@@ -15,14 +15,12 @@ module.exports = {
         sidebar: [
           {
             title: "Development",
-            sidebarDepth: 2,
             path: "/dev/getting-started",
-            children: ["dev/getting-started", "dev/guide"]
+            children: ["dev/getting-started", "dev/guide", "dev/permissions"]
           },
 
           {
             title: "Contributing",
-            sidebarDepth: 2,
             path: "/dev/okyanus/contributing",
             children: ["dev/okyanus/workspace"]
           }
@@ -32,8 +30,6 @@ module.exports = {
           { text: "GitHub", link: "https://github.com/okyanus-mc" }
         ]
       }
-    },
-    sidebarDepth: 2,
-    displayAllHeaders: true
+    }
   }
 };
