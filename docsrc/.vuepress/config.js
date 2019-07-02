@@ -26,6 +26,10 @@ module.exports = {
             path: "/dev/okyanus/contributing",
             children: ["dev/okyanus/workspace"]
           }
+        ],
+        nav: [
+          { text: "Javadocs", link: "https://okyanus-mc.github.io/api/" },
+          { text: "GitHub", link: "https://github.com/okyanus-mc" }
         ]
       }
     },
