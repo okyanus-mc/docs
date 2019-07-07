@@ -35,13 +35,20 @@ on it. Now you can put a couple `System.out.println`s to the created method.
 You'll need to register this class now. Go to your main class' `init` method
 and register your command like so:
 
+##### Suggestion
+import static to CommandOptions.* to easy create commands.
+
 ```java
 registerCommand(
-    new CommandBuilder("hello")
-        .run(new HelloCommand());
-    })
+    new CommandOf(
+        "hello-command-id",
+        CommandOptions.label("hello"),
+        CommandOptions.run(new HelloCommand())
+    )
 );
 ```
+
+The first 'CommandOf' have to has a label, but not necessary for subCommands of the command.
 
 Now compile your mod, and add it to your `mods/` folder.
 
@@ -53,18 +60,44 @@ To add an argument to your command, first define it in your registration:
 
 ```java
 registerCommand(
-    new CommandBuilder("hello")
-        .arg("person", ArgumentType.PLAYER)
-        .run(new HelloCommand());
-    })
+    new CommandOf(
+        "hello-command-id",
+        label("hello"),
+        run(new HelloCommand()),
+        subCommands(
+            new CommandOf(
+                "person",
+                type(ArgumentType.PLAYER),
+                run(new SendHello())
+            )
+        )
+    )
 );
 ```
+
+#### Explation
+"hello-command-id" is id of the main command.
+label("hello") is /<label>
+subCommands is /<label> <sub-commands> <..> <..>
+
+If you don't give a label to subCommand, it will be a non-literal argument so,
+you can use the command like that /hello playerName or /hello Jack
+"person" is a tip to write the argument, if the label didn't set.
+type(ArgumentType.PLAYER) is make the argument as player argument, it will suggest you
+online players or @a or @e etc.
+
+If there is run method of before the subCommand, the subCommand will be a optional so,
+if you use '/hello' command, the system runs 'HelloCommand' so,
+if you use '/hello <person>' command, the system runs 'SendHello'
 
 Now go to your command class, and get the value of that argument like so:
 
 ```java
-Optional<Player> p = source.getArgPlayer("person")
+Player p = source.getArgPlayer();
 ```
+
+#### Important
+If the player isn't is the server getArgPlayer returns MckPlayer which is a mock.
 
 Try printing it out!
 
