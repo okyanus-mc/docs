@@ -105,7 +105,7 @@ Player p = source.getArgPlayer();
 ```
 
 #### Important
-If the player isn't is the server getArgPlayer returns MckPlayer which is a mock.
+If the player isn't in the server getArgPlayer returns MckPlayer which is a mock.
 
 Try printing it out!
 
